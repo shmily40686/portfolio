@@ -2,9 +2,9 @@
   <div class="nav">
     <a class="nav-a" href="#self">Introduction</a>
     <a class="nav-a" href="#skill">Skill</a>
-    <a class="nav-a" >
+    <a class="nav-a p"  v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
         Project
-        <div class="projects">
+        <div class="projects" v-show="active" >
             <a href="#udmey">udmey-clone</a>
             <a href="#kids">KidsCart</a>
             <a href="#frog">Frog Jumper</a>
@@ -17,7 +17,20 @@
 
 <script>
 export default {
-  name: 'Nav'
+  name: 'Nav',
+  data: function () {
+            return {
+               active: false
+            }
+        },
+  methods: {
+            mouseover: function () {
+                this.active = true
+             },
+             mouseleave: function () {
+                 this.active = false
+             }
+        }
 }
 </script>
 
@@ -27,18 +40,50 @@ export default {
        position: fixed;
        display: flex;
        justify-content: center;
+       align-items: center;
        width: 100%;
-       height: 20vh;
+       height: 10vh;
        background-color: white;
    }
 
    .nav-a {
-       margin-left: 10px;
+       font-size: 22px;
+       cursor: pointer;
+       margin-left: 25px;
        text-decoration: none;
+       color: #2c3e50;
+        -webkit-transition: all 0.5s ease;
+   }
+
+   .nav-a p {
+       position: relative;
+   }
+
+   .nav-a:hover {
+       color: rgb(250, 149, 196);
    }
 
    .projects {
        display: flex;
        flex-direction: column;
+       position: absolute;
+       background-color: white;
+       top: 6.5vh;
+       padding: 15px 30px 0px;
+       border-bottom-left-radius: 5px;
+       border-bottom-right-radius: 5px;
+       opacity: 95%;
+   }
+
+   .projects a {
+       margin-bottom: 16px;
+       text-decoration: none;
+       color: #2c3e50;
+       -webkit-transition: all 0.5s ease;
+       font-size: 15px;
+   }
+
+   .projects a:hover {
+       color: rgb(235, 162, 210);
    }
 </style>

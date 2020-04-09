@@ -19,8 +19,9 @@ export default {
   .self {
     width: 100vw;
     height: 100vh;
-    background-color: aquamarine;
+    background-color: rgb(243, 214, 227);
     -webkit-transition: all 0.5s ease;
+    padding-top: 200px;
   }
   img {
     width: 200px;
