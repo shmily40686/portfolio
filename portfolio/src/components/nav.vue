@@ -52,7 +52,7 @@ export default {
        margin-left: 25px;
        text-decoration: none;
        color: #2c3e50;
-        -webkit-transition: all 0.5s ease;
+        -webkit-transition: all 0.35s ease;
    }
 
    .nav-a p {
@@ -79,7 +79,7 @@ export default {
        margin-bottom: 16px;
        text-decoration: none;
        color: #2c3e50;
-       -webkit-transition: all 0.5s ease;
+       -webkit-transition: all 0.35s ease;
        font-size: 15px;
    }
 
