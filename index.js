@@ -26,7 +26,13 @@ var app = new Vue({
 
     },
     mounted: function() {
-        
+        fetch("xxxx", {
+            method:"get"
+        })
+        .then((res) => {
+            return res.json()
+        })
+
     }
 
 })

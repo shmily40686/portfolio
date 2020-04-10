@@ -18,7 +18,8 @@ export default {
     .d3 {
         width: 100vw;
         height: 100vh;
-        background-color: rgb(192, 252, 232);
+        background-color:  rgb(235, 111, 169);
         -webkit-transition: all 0.5s ease;
+        padding-top: 200px;
   }
 </style>

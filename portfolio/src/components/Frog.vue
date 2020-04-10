@@ -18,7 +18,8 @@ export default {
     .frog {
         width: 100vw;
         height: 100vh;
-        background-color: rgb(192, 252, 232);
+        background-color: rgb(233, 152, 190);
         -webkit-transition: all 0.5s ease;
+        padding-top: 200px;
   }
 </style>
