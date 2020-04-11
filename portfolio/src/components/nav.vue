@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
     <a class="nav-a" href="#self">Introduction</a>
-    <a class="nav-a" href="#skill">Skill</a>
+    <a class="nav-a" href="#skill"  v-on:click="showSkill">Skill</a>
     <a class="nav-a p"  v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
         Project
         <div class="projects" v-show="active" >
@@ -26,10 +26,16 @@ export default {
   methods: {
             mouseover: function () {
                 this.active = true
-             },
+            },
              mouseleave: function () {
                  this.active = false
-             }
+            },
+            showSkill: function () {
+                 const sliderImages = document.querySelectorAll('.skill-img');
+                  sliderImages.forEach(sliderImage => {
+                        sliderImage.classList.add('active');
+                })
+            }
         }
 }
 </script>
@@ -86,5 +92,10 @@ export default {
 
    .projects a:hover {
        color: rgb(235, 162, 210);
+   }
+
+   .skill-img.active {
+     opacity: 1;
+     transform:translateX(0%) scale(1);
    }
 </style>

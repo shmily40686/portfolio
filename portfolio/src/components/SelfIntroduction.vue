@@ -55,6 +55,7 @@ export default {
     background-image: url("../assets/heart.png");
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
   }
 
   #info {
