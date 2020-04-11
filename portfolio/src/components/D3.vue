@@ -16,10 +16,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .d3 {
-        width: 100vw;
+         width: 100vw;
         height: 100vh;
-        background-color:  rgb(235, 111, 169);
+        background-color: rgb(255, 226, 239);
         -webkit-transition: all 0.5s ease;
         padding-top: 200px;
+        background-image: url("../assets/leaf.png");
+        background-size: cover;
+        background-repeat: no-repeat;
   }
 </style>

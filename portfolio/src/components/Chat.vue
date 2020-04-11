@@ -18,8 +18,12 @@ export default {
     .chat {
         width: 100vw;
         height: 100vh;
-        background-color: rgb(226, 124, 172);
-        -webkit-transition: all 0.5s ease;
-        padding-top: 200px;
+        background-color: rgb(255, 219, 235);
+        display: flex;
+        align-items: center;
+        padding-top: 35px;
+        background-image: url("../assets/flowers5.png");
+        background-size: cover;
+        background-repeat: no-repeat;
   }
 </style>
