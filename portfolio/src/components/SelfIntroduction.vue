@@ -62,7 +62,6 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 30px 100px;
-    background: white;
     background: rgba(255, 255, 255, 0.5);
   }
 
