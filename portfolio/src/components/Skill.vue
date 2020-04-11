@@ -1,23 +1,28 @@
 <template>
   <div class="skill" id="skill">
+    <div class="head-skill">
+      <div v-on:click="frontendShow">Frontend Skills</div>
+      <div v-on:click="backendShow">Backend Skills</div>
+      <div v-on:click="fullstackShow">Fullstack Skills</div>
+    </div>
     <div id="logo">
-      <img src="../assets/skill/js.png" class="skill-img">
-      <img src="../assets/skill/html.png" class="skill-img">
-      <img src="../assets/skill/css.png" class="skill-img">
-      <img src="../assets/skill/react.png" class="skill-img">
-      <img src="../assets/skill/redux.png" class="skill-img">
-      <img src="../assets/skill/ruby.png" class="skill-img">
-      <img src="../assets/skill/rails.png" class="skill-img">
-      <img src="../assets/skill/php.png" class="skill-img">
-      <img src="../assets/skill/jquery.png" class="skill-img">
-      <img src="../assets/skill/vue.png" class="skill-img">
-      <img src="../assets/skill/node.png" class="skill-img">
-      <img src="../assets/skill/mysql.png" class="skill-img">
-      <img src="../assets/skill/postgre.png" class="skill-img">
-      <img src="../assets/skill/sql.png" class="skill-img">
-      <img src="../assets/skill/git.png" class="skill-img">
-      <img src="../assets/skill/socket.png" class="skill-img">
-      <img src="../assets/skill/webpack.png" class="skill-img">
+      <img src="../assets/skill/js.png" class="skill-img" v-show="frontend">
+      <img src="../assets/skill/html.png" class="skill-img" v-show="frontend">
+      <img src="../assets/skill/css.png" class="skill-img" v-show="frontend">
+      <img src="../assets/skill/react.png" class="skill-img" v-show="frontend">
+      <img src="../assets/skill/redux.png" class="skill-img" v-show="frontend">
+      <img src="../assets/skill/jquery.png" class="skill-img" v-show="frontend">
+      <img src="../assets/skill/socket.png" class="skill-img" v-show="frontend">
+      <img src="../assets/skill/webpack.png" class="skill-img" v-show="frontend">
+      <img src="../assets/skill/vue.png" class="skill-img" v-show="frontend">
+      <img src="../assets/skill/node.png" class="skill-img" v-show="backend">
+      <img src="../assets/skill/mysql.png" class="skill-img" v-show="backend">
+      <img src="../assets/skill/postgre.png" class="skill-img" v-show="backend">
+      <img src="../assets/skill/sql.png" class="skill-img" v-show="backend">
+      <img src="../assets/skill/git.png" class="skill-img" v-show="backend">
+      <img src="../assets/skill/ruby.png" class="skill-img" v-show="backend">
+      <img src="../assets/skill/rails.png" class="skill-img" v-show="backend">
+      <img src="../assets/skill/php.png" class="skill-img" v-show="backend">
     </div>
   </div>
 </template>
@@ -25,6 +30,12 @@
 <script>
 export default {
   name: 'Skill',
+  data: function () {
+        return {
+          frontend: true,
+          backend:true
+        }
+      },
    methods: {
         debounce: function (func, wait = 20, immediate = true) {
           var timeout;
@@ -51,6 +62,18 @@ export default {
             console.log("div.offsetTop", div.offsetTop)
             console.log("window.innerHeight", window.innerHeight)
             console.log("window.pageYOffset", window.pageYOffset)
+         },
+         frontendShow: function() {
+            this.frontend = true;
+            this.backend = false;
+         },
+         backendShow: function() {
+           this.frontend = false;
+           this.backend = true;
+         },
+         fullstackShow: function() {
+          this.frontend = true;
+           this.backend = true;
          }
       },
   mounted() {
@@ -63,10 +86,10 @@ export default {
 <style scoped>
     .skill {
         width: 100vw;
-        height: 100vh;
+        height: 85vh;
         background-color: rgb(240, 208, 222);
         -webkit-transition: all 0.5s ease;
-        padding-top: 130px;
+        padding-top: 120px;
         background-image: url("../assets/flowers1.png");
         background-size: cover;
         background-repeat: no-repeat;
@@ -78,9 +101,10 @@ export default {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    padding: 80px 100px;
-    margin-top: 110px;
+    padding: 100px 100px;
+    margin-top: 55px;
     background: rgba(255, 255, 255, 0.6);
+    height: 40%;
   }
 
   .skill-img {
@@ -92,9 +116,36 @@ export default {
     transform:translateX(-80%) scale(0.95);
   }
 
+  .skill-img.active:hover {
+    transform: rotate(45deg)
+  }
+
   .skill-img.active {
      opacity: 1;
      transform:translateX(0%) scale(1);
   }
+
+  .show {
+    visibility:hidden;
+  }
+
+  .head-skill {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  .head-skill div {
+    margin-left: 20px;
+    padding: 4px 10px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+  }
+
+.head-skill div:hover {
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffc4ce;
+}
 
 </style>
