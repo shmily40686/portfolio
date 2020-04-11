@@ -18,8 +18,11 @@ export default {
     .kids {
         width: 100vw;
         height: 100vh;
-        background-color: rgb(238, 173, 203);
+        background-color: rgb(255, 226, 239);
         -webkit-transition: all 0.5s ease;
         padding-top: 200px;
+        background-image: url("../assets/leaf2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
   }
 </style>

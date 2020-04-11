@@ -53,6 +53,8 @@ export default {
     align-items: center;
     padding-top: 35px;
     background-image: url("../assets/heart.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   #info {

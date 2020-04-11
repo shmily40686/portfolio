@@ -18,8 +18,11 @@ export default {
     .udmey {
         width: 100vw;
         height: 100vh;
-        background-color:  rgb(235, 195, 214);
+        background-color:  rgb(243, 182, 212);
         -webkit-transition: all 0.5s ease;
         padding-top: 200px;
+        background-image: url("../assets/flowers4.png");
+        background-size: cover;
+        background-repeat: no-repeat;
   }
 </style>

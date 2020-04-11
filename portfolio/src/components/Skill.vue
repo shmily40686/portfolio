@@ -21,5 +21,8 @@ export default {
         background-color: rgb(240, 208, 222);
         -webkit-transition: all 0.5s ease;
         padding-top: 200px;
+        background-image: url("../assets/flowers1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
   }
 </style>
