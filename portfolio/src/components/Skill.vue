@@ -82,16 +82,37 @@ export default {
             })
             const p = document.querySelector(".u-picture");
             const t = document.querySelector(".u-text");
-            if ( window.pageYOffset >= window.innerHeight + 200) {
+            if ( window.pageYOffset >= window.innerHeight + 100) {
               p.style.transform = "translateX(0%) scale(1)";
               t.style.transform = "translateX(0%) scale(1)";
             }
             const kp = document.querySelector(".k-picture");
             const kt = document.querySelector(".k-text");
-             if (window.pageYOffset >= window.innerHeight*2 + 200) {
+             if (window.pageYOffset >= window.innerHeight*2 + 100) {
               kp.style.transform = "translateX(0%) scale(1)";
               kt.style.transform = "translateX(0%) scale(1)";
             }
+
+            const fp = document.querySelector(".f-picture");
+            const ft = document.querySelector(".f-text");
+            if (window.pageYOffset >= window.innerHeight * 3 + 100) {
+             fp.style.transform = "translateX(0%) scale(1)";
+             ft.style.transform = "translateX(0%) scale(1)";
+            }
+
+            const cp = document.querySelector(".c-picture");
+            const ct = document.querySelector(".c-text");
+           if (window.pageYOffset >= window.innerHeight * 4 + 100) {
+             cp.style.transform = "translateX(0%) scale(1)";
+             ct.style.transform = "translateX(0%) scale(1)";
+           }
+
+            const dp = document.querySelector(".d-picture");
+           const dt = document.querySelector(".d-text");
+           if (window.pageYOffset >= window.innerHeight * 4 + 100) {
+             dp.style.transform = "translateX(0%) scale(1)";
+             dt.style.transform = "translateX(0%) scale(1)";
+           }
          },
          frontendShow: function() {
             this.frontend = true;
