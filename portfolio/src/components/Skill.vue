@@ -73,16 +73,25 @@ export default {
           }
         },
          checkScroll: function() {
-            const div = document.getElementById("skill")
+            console.log("window.pageYOffset", window.pageYOffset)
             const sliderImages = document.querySelectorAll('.skill-img');
             sliderImages.forEach(sliderImage => {
               if(window.pageYOffset >= window.innerHeight / 2 - 100) {
                  sliderImage.classList.add('active');
               } 
             })
-            console.log("div.offsetTop", div.offsetTop)
-            console.log("window.innerHeight", window.innerHeight)
-            console.log("window.pageYOffset", window.pageYOffset)
+            const p = document.querySelector(".u-picture");
+            const t = document.querySelector(".u-text");
+            if ( window.pageYOffset >= window.innerHeight + 200) {
+              p.style.transform = "translateX(0%) scale(1)";
+              t.style.transform = "translateX(0%) scale(1)";
+            }
+            const kp = document.querySelector(".k-picture");
+            const kt = document.querySelector(".k-text");
+             if (window.pageYOffset >= window.innerHeight*2 + 200) {
+              kp.style.transform = "translateX(0%) scale(1)";
+              kt.style.transform = "translateX(0%) scale(1)";
+            }
          },
          frontendShow: function() {
             this.frontend = true;

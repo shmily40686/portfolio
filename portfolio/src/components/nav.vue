@@ -5,7 +5,7 @@
     <a class="nav-a p"  v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
         Project
         <div class="projects" v-show="active" >
-            <a href="#udmey">udmey-clone</a>
+            <a href="#udmey" v-on:click="showUdmey">udmey-clone</a>
             <a href="#kids">KidsCart</a>
             <a href="#frog">Frog Jumper</a>
             <a href="#chat">Fun Chat</a>
@@ -35,6 +35,12 @@ export default {
                   sliderImages.forEach(sliderImage => {
                         sliderImage.classList.add('active');
                 })
+            },
+            showUdmey: function () {
+                const p = document.querySelector(".u-picture");
+                const t = document.querySelector(".u-text");
+                p.style.transform= "translateX(0%) scale(1)";
+                t.style.transform = "translateX(0%) scale(1)";
             }
         }
 }
