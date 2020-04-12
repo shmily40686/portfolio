@@ -58,7 +58,9 @@ export default {
       padding: 10px 30px;
       border-radius: 15px;
       box-shadow: 5px 2.5px 10px rgba(48,48,48,.6);
-      overflow-y:auto
+      overflow-y:auto;
+      -webkit-transition: all 1.5s ease;
+      transform:translateX(-100%) scale(0.95);
    }
    .u-picture img {
      width: 90%;
@@ -76,6 +78,8 @@ export default {
     overflow-y:auto;
     justify-content: center;
     padding: 10px 30px;
+    -webkit-transition: all 1.5s ease;
+    transform:translateX(100%) scale(0.95);
    }
 
    .u-text a {
