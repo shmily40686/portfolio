@@ -11,7 +11,10 @@
       <img src="../assets/udemy/8.png">
    </div>
    <div class="u-text">
-     <h2>YOUdemy (Rails, ReactJS)</h2>
+     <div class="u-text-header">
+      <h2>YOUdemy</h2>
+      <h4> (Rails, ReactJS)</h4>
+     </div>
      <h5>Rails and React complement each other in this app that replicates key features of Udemy
 </h5>
      <ul>
@@ -51,8 +54,8 @@ export default {
    .u-picture {
       background: rgba(255, 255, 255, 0.8);
       height: 90%;
-      width: 45%;
-      padding: 10px;
+      width: 40%;
+      padding: 10px 30px;
       border-radius: 15px;
       box-shadow: 5px 2.5px 10px rgba(48,48,48,.6);
       overflow-y:auto
@@ -67,12 +70,12 @@ export default {
     flex-direction: column;
     background: rgba(255, 255, 255, 0.6);
     height: 90%;
-    width: 45%;
+    width: 40%;
     border-radius: 15px;
     box-shadow: 5px 2.5px 10px rgba(48,48,48,.6);
     overflow-y:auto;
     justify-content: center;
-    padding: 0px 30px;
+    padding: 10px 30px;
    }
 
    .u-text a {
@@ -82,5 +85,16 @@ export default {
 
    .u-text a:hover {
      color: #e4c44e;
+   }
+
+   .u-text-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .u-text-header h2 {
+      color: #a0915a;
+      margin-right: 10px;
    }
 </style>

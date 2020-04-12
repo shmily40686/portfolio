@@ -4,6 +4,7 @@
       <div v-on:click="frontendShow">Frontend Skills</div>
       <div v-on:click="backendShow">Backend Skills</div>
       <div v-on:click="fullstackShow">Fullstack Skills</div>
+      <div v-on:click="textShow">Text Form</div>
     </div>
     <div id="logo">
       <img src="../assets/skill/js.png" class="skill-img" v-show="frontend">
@@ -15,6 +16,7 @@
       <img src="../assets/skill/socket.png" class="skill-img" v-show="frontend">
       <img src="../assets/skill/webpack.png" class="skill-img" v-show="frontend">
       <img src="../assets/skill/vue.png" class="skill-img" v-show="frontend">
+      <img src="../assets/skill/db.png" class="skill-img" v-show="backend">
       <img src="../assets/skill/node.png" class="skill-img" v-show="backend">
       <img src="../assets/skill/mysql.png" class="skill-img" v-show="backend">
       <img src="../assets/skill/postgre.png" class="skill-img" v-show="backend">
@@ -23,6 +25,24 @@
       <img src="../assets/skill/ruby.png" class="skill-img" v-show="backend">
       <img src="../assets/skill/rails.png" class="skill-img" v-show="backend">
       <img src="../assets/skill/php.png" class="skill-img" v-show="backend">
+      <div class="text-form" v-show="text">JavaScript</div>
+      <div class="text-form" v-show="text">HTML5</div>
+      <div class="text-form" v-show="text">CSS</div>
+      <div class="text-form" v-show="text">React.js</div>
+      <div class="text-form" v-show="text">Redux.js</div>
+      <div class="text-form" v-show="text">jQuery</div>
+      <div class="text-form" v-show="text">Socket.io</div>
+      <div class="text-form" v-show="text">Webpack</div>
+      <div class="text-form" v-show="text">Vue.js</div>
+      <div class="text-form" v-show="text">Node.js</div>
+      <div class="text-form" v-show="text">SQL</div>
+      <div class="text-form" v-show="text">Mysql</div>
+      <div class="text-form" v-show="text">Postgre</div>
+      <div class="text-form" v-show="text">MongoDB</div>
+      <div class="text-form" v-show="text">Git</div>
+      <div class="text-form" v-show="text">Ruby</div>
+      <div class="text-form" v-show="text">Ruby on Rails</div>
+      <div class="text-form" v-show="text">PHP</div>
     </div>
   </div>
 </template>
@@ -33,7 +53,8 @@ export default {
   data: function () {
         return {
           frontend: true,
-          backend:true
+          backend:true,
+          text:false
         }
       },
    methods: {
@@ -66,14 +87,22 @@ export default {
          frontendShow: function() {
             this.frontend = true;
             this.backend = false;
+            this.text = false;
          },
          backendShow: function() {
            this.frontend = false;
            this.backend = true;
+           this.text = false;
          },
          fullstackShow: function() {
           this.frontend = true;
-           this.backend = true;
+          this.backend = true;
+          this.text = false;
+         },
+         textShow: function() {
+           this.frontend = false;
+           this.backend = false;
+           this.text = true;
          }
       },
   mounted() {
@@ -146,6 +175,17 @@ export default {
 .head-skill div:hover {
   background: rgba(0, 0, 0, 0.6);
   color: #ffc4ce;
+}
+
+.text-form {
+  font-size:20px;
+  margin: 10px;
+  font-weight: 600;
+  color: #201f1b;
+}
+
+.text-form:hover {
+  color: #a0915a;
 }
 
 </style>
