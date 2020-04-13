@@ -1,5 +1,8 @@
 <template>
   <div class="skill" id="skill">
+    <!-- <div>
+      <i class="fas fa-sort-up"></i>
+    </div> -->
     <div class="head-skill">
       <div v-on:click="frontendShow">Frontend Skills</div>
       <div v-on:click="backendShow">Backend Skills</div>
@@ -109,7 +112,7 @@ export default {
 
             const dp = document.querySelector(".d-picture");
            const dt = document.querySelector(".d-text");
-           if (window.pageYOffset >= window.innerHeight * 4 + 100) {
+           if (window.pageYOffset >= window.innerHeight * 5 + 100) {
              dp.style.transform = "translateX(0%) scale(1)";
              dt.style.transform = "translateX(0%) scale(1)";
            }

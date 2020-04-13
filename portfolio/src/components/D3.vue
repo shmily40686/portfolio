@@ -12,23 +12,17 @@
     </div>
     <div class="d-text">
       <div class="d-text-header">
-        <h2>YOUdemy</h2>
-        <h4> (Rails, ReactJS)</h4>
+        <h2>Tech-D3</h2>
+        <h4> (JavaScript, D3.js)</h4>
       </div>
-      <h5>Rails and React complement each other in this app that replicates key features of Udemy
-      </h5>
+      <h5>D3 powers these data visualizations to captivate the eye while describing a story of information</h5>
       <ul>
-        <li>Utilized object IDs as keys in global redux store to provide constant time lookup of items within application
-          state
+        <li>Reused canvases between multiple visualizations to improve interactive aspect of gallery
         </li>
-        <li>Incorporated BCrypt with RoR backend to salt and hash passwords to prevent rainbow table attacks</li>
-        <li>Implemented original custom CSS animations for sliding window carousel to enhance UX across application</li>
-        <li>Optimized API queries to improve speed of search functionality by filtering content metadata by category and
-          title
-        </li>
+        <li>Created with vanilla JavaScript and HTML5 without needing to leverage frontend frameworks to control views</li>
       </ul>
-      <a href="https://udemy-clone-project.herokuapp.com">Check the Project</a>
-      <a href="https://github.com/shmily40686/udemy-clone">Check the Code</a>
+      <a href="https://github.com/shmily40686/d3-tech-companies">Check the Project</a>
+      <a href="https://shmily40686.github.io/d3-tech-companies">Check the Code</a>
     </div>
   </div>
 </template>

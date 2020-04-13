@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/shmily40686/portfolio#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "vue": "^2.6.11"
   }
 }

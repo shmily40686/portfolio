@@ -1,34 +1,31 @@
 <template>
   <div class="chat" id="chat">
     <div class="c-picture">
-      <img src="../assets/udemy/1.png">
-      <img src="../assets/udemy/3.png">
-      <img src="../assets/udemy/2.png">
-      <img src="../assets/udemy/4.png">
-      <img src="../assets/udemy/5.png">
-      <img src="../assets/udemy/6.png">
-      <img src="../assets/udemy/7.png">
-      <img src="../assets/udemy/8.png">
+      <img src="../assets/chat/1.png">
+      <img src="../assets/chat/2.png">
+      <img src="../assets/chat/3.png">
+      <img src="../assets/chat/4.png">
+      <img src="../assets/chat/5.png">
+      <img src="../assets/chat/6.png">
+      <img src="../assets/chat/7.png">
+      <img src="../assets/chat/8.png">
+      <img src="../assets/chat/9.png">
     </div>
     <div class="c-text">
       <div class="c-text-header">
-        <h2>YOUdemy</h2>
-        <h4> (Rails, ReactJS)</h4>
+        <h2>Fun Chat</h2>
+        <h4> (Socket.io, ReactJS)</h4>
       </div>
-      <h5>Rails and React complement each other in this app that replicates key features of Udemy
+      <h5>Chat application focusing on cross-language communication that translates messages you send automatically
       </h5>
       <ul>
-        <li>Utilized object IDs as keys in global redux store to provide constant time lookup of items within application
-          state
+        <li>Utilized socket.io library to emit events from an express backend and listened on the frontend using the .on method
         </li>
-        <li>Incorporated BCrypt with RoR backend to salt and hash passwords to prevent rainbow table attacks</li>
-        <li>Implemented original custom CSS animations for sliding window carousel to enhance UX across application</li>
-        <li>Optimized API queries to improve speed of search functionality by filtering content metadata by category and
-          title
-        </li>
+        <li>Used Validator to ensure normalization of models with metadata to specify language preferences</li>
+        <li>Incorporated translation API to automatically translate messages received to current native language</li>
       </ul>
-      <a href="https://udemy-clone-project.herokuapp.com">Check the Project</a>
-      <a href="https://github.com/shmily40686/udemy-clone">Check the Code</a>
+      <a href="https://fun-chats.herokuapp.com">Check the Project</a>
+      <a href="https://github.com/shmily40686/FunChat">Check the Code</a>
     </div>
   </div>
 </template>
