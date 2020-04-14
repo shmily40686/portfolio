@@ -28,6 +28,9 @@
         <a href="https://shmily40686.github.io/d3-tech-companies">Check the Code</a>
       </div>
     </div>
+    <a href="#skill" id="down" v-on:click="showSkill">
+      <font-awesome-icon icon="chevron-down" />
+    </a>
   </div>
 </template>
 
