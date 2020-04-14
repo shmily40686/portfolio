@@ -13,6 +13,7 @@
 </template>
 
 <script>
+
 import SelfIntroduction from './components/SelfIntroduction.vue';
 import Skill from './components/Skill.vue';
 import Nav from './components/nav.vue';
@@ -21,6 +22,7 @@ import Kids from './components/Kids.vue';
 import Frog from './components/Frog.vue';
 import Chat from './components/Chat.vue';
 import D3 from './components/D3.vue';
+
 
 export default {
   name: 'App',

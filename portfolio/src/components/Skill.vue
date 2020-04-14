@@ -1,5 +1,8 @@
 <template>
   <div class="skill" id="skill">
+    <a href="#self" id="down" >
+      <font-awesome-icon icon="chevron-up" />
+    </a>
     <div class="head-skill">
       <div v-on:click="frontendShow">Frontend Skills</div>
       <div v-on:click="backendShow">Backend Skills</div>
@@ -44,6 +47,9 @@
       <div class="text-form" v-show="text">Ruby on Rails</div>
       <div class="text-form" v-show="text">PHP</div>
     </div>
+    <a href="#udmey" id="down"  v-on:click="showUdmey">
+      <font-awesome-icon icon="chevron-down" />
+    </a>
   </div>
 </template>
 
@@ -82,16 +88,47 @@ export default {
             })
             const p = document.querySelector(".u-picture");
             const t = document.querySelector(".u-text");
-            if ( window.pageYOffset >= window.innerHeight + 200) {
+            if ( window.pageYOffset >= window.innerHeight + 100) {
               p.style.transform = "translateX(0%) scale(1)";
               t.style.transform = "translateX(0%) scale(1)";
+              p.style.opacity = 1;
+              t.style.opacity = 1;
             }
             const kp = document.querySelector(".k-picture");
             const kt = document.querySelector(".k-text");
-             if (window.pageYOffset >= window.innerHeight*2 + 200) {
+             if (window.pageYOffset >= window.innerHeight*2 + 100) {
               kp.style.transform = "translateX(0%) scale(1)";
               kt.style.transform = "translateX(0%) scale(1)";
+              kp.style.opacity = 1;
+              kt.style.opacity = 1;
             }
+
+            const fp = document.querySelector(".f-picture");
+            const ft = document.querySelector(".f-text");
+            if (window.pageYOffset >= window.innerHeight * 3 + 100) {
+             fp.style.transform = "translateX(0%) scale(1)";
+             ft.style.transform = "translateX(0%) scale(1)";
+             fp.style.opacity = 1;
+             ft.style.opacity = 1;
+            }
+
+            const cp = document.querySelector(".c-picture");
+            const ct = document.querySelector(".c-text");
+           if (window.pageYOffset >= window.innerHeight * 4 + 300) {
+             cp.style.transform = "translateX(0%) scale(1)";
+             ct.style.transform = "translateX(0%) scale(1)";
+             cp.style.opacity = 1;
+             ct.style.opacity = 1;
+           }
+
+            const dp = document.querySelector(".d-picture");
+           const dt = document.querySelector(".d-text");
+           if (window.pageYOffset >= window.innerHeight * 5 + 300) {
+             dp.style.transform = "translateX(0%) scale(1)";
+             dt.style.transform = "translateX(0%) scale(1)";
+             dp.style.opacity = 1;
+             dt.style.opacity = 1;
+           }
          },
          frontendShow: function() {
             this.frontend = true;
@@ -112,6 +149,14 @@ export default {
            this.frontend = false;
            this.backend = false;
            this.text = true;
+         },
+         showUdmey: function () {
+          const p = document.querySelector(".u-picture");
+          const t = document.querySelector(".u-text");
+          p.style.transform = "translateX(0%) scale(1)";
+          t.style.transform = "translateX(0%) scale(1)";
+          p.style.opacity = 1;
+          t.style.opacity = 1;
          }
       },
   mounted() {
@@ -124,25 +169,40 @@ export default {
 <style scoped>
     .skill {
         width: 100vw;
-        height: 85vh;
+        height: 95vh;
         background-color: rgb(240, 208, 222);
         -webkit-transition: all 0.5s ease;
-        padding-top: 120px;
         background-image: url("../assets/flowers1.png");
         background-size: cover;
         background-repeat: no-repeat;
+        padding-top:80px;
+        box-shadow: 0 0 100px 70px white inset;
     }
+
+  #down {
+    font-size: 60px;
+    opacity: 0.7;
+    color: #aaa1a1;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+  }
+
+  #down:hover {
+    opacity: 0.9;
+    color: #dbc17b;
+  }
 
 
   #logo {
+    margin-top: 15%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     padding: 100px 100px;
-    margin-top: 55px;
+    margin-top: 10px;
     background: rgba(255, 255, 255, 0.6);
-    height: 40%;
+    height: 35%;
   }
 
   .skill-img {

@@ -20,6 +20,9 @@
           especially like watching movies or television shows because I used to study film production and editing.
         </div>
     </div>
+    <a href="#skill" id="down"  v-on:click="showSkill">
+        <font-awesome-icon icon="chevron-down" />
+    </a>
   </div>
 </template>
 
@@ -31,6 +34,14 @@ export default {
           textActive: false
         }
       },
+  methods: {
+     showSkill: function () {
+      const sliderImages = document.querySelectorAll('.skill-img');
+      sliderImages.forEach(sliderImage => {
+        sliderImage.classList.add('active');
+      })
+    },
+  },
   mounted() {
         setTimeout(() => {
           const text = document.getElementById("text")
@@ -50,12 +61,27 @@ export default {
     height: 100vh;
     background-color: rgb(243, 214, 227);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding-top: 35px;
     background-image: url("../assets/heart.png");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+    box-shadow: 0 0 100px 70px white inset;
+  }
+
+  #down {
+    font-size: 60px;
+    /* margin-top: -20px; */
+    opacity: 0.7;
+    color: #aaa1a1;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+  }
+
+  #down:hover {
+    opacity: 0.9;
+    color: #dbc17b;
   }
 
   #info {
@@ -64,6 +90,7 @@ export default {
     align-items: center;
     padding: 30px 100px;
     background: rgba(255, 255, 255, 0.5);
+    margin-top: 15%;
   }
 
   #head {
