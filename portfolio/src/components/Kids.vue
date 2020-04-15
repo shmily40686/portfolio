@@ -38,7 +38,7 @@
           <a href="https://github.com/ladydragonforever/KidsCart">Check the Code</a>
         </div>
     </div> 
-    <a href="#frog" id="down">
+    <a href="#frog" id="down" v-on:click="goDown">
       <font-awesome-icon icon="chevron-down" />
     </a>
   </div>
@@ -46,7 +46,17 @@
 
 <script>
 export default {
-  name: 'Kids'
+  name: 'Kids',
+  methods: {
+        goDown: function () {
+          const fp = document.querySelector(".f-picture");
+          const ft = document.querySelector(".f-text");
+          fp.style.transform = "translateX(0%) scale(1)";
+          ft.style.transform = "translateX(0%) scale(1)";
+          fp.style.opacity = 1;
+          ft.style.opacity = 1;
+        }
+  }
 }
 </script>
 

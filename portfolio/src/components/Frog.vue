@@ -31,7 +31,7 @@
         <a href="https://github.com/shmily40686/frog-jumper">Check the Code</a>
       </div>
     </div>
-    <a href="#chat" id="down">
+    <a href="#chat" id="down" v-on:click="goDown">
       <font-awesome-icon icon="chevron-down" />
     </a>
   </div>
@@ -40,8 +40,15 @@
 <script>
 export default {
   name: 'Frog',
-  props: {
-    msg: String
+  methods: {
+        goDown: function () {
+          const cp = document.querySelector(".c-picture");
+          const ct = document.querySelector(".c-text");
+          cp.style.transform = "translateX(0%) scale(1)";
+          ct.style.transform = "translateX(0%) scale(1)";
+          cp.style.opacity = 1;
+          ct.style.opacity = 1;
+        }
   }
 }
 </script>

@@ -35,7 +35,7 @@
           <a href="https://github.com/shmily40686/udemy-clone">Check the Code</a>
         </div>
     </div>
-    <a href="#kids" id="down">
+    <a href="#kids" id="down" v-on:click="goDown">
       <font-awesome-icon icon="chevron-down" />
     </a>
   </div>
@@ -43,7 +43,17 @@
 
 <script>
 export default {
-  name: 'Udmey'
+  name: 'Udmey',
+  methods: {
+    goDown: function() {
+      const kp = document.querySelector(".k-picture");
+      const kt = document.querySelector(".k-text");
+        kp.style.transform = "translateX(0%) scale(1)";
+        kt.style.transform = "translateX(0%) scale(1)";
+        kp.style.opacity = 1;
+        kt.style.opacity = 1;
+    }
+  }
 }
 </script>
 

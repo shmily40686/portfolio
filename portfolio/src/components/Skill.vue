@@ -121,7 +121,7 @@ export default {
              ct.style.opacity = 1;
            }
 
-            const dp = document.querySelector(".d-picture");
+           const dp = document.querySelector(".d-picture");
            const dt = document.querySelector(".d-text");
            if (window.pageYOffset >= window.innerHeight * 5 + 300) {
              dp.style.transform = "translateX(0%) scale(1)";
