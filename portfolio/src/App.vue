@@ -1,13 +1,14 @@
 <template>
   <div id="app">
     <Nav />
-    <SelfIntroduction msg="Welcome to Your Vue.js App"/>
+    <SelfIntroduction />
     <Skill />
     <Udmey />
     <Kids />
     <Frog />
     <Chat />
     <D3 />
+    <Concat />
 
   </div>
 </template>
@@ -22,6 +23,7 @@ import Kids from './components/Kids.vue';
 import Frog from './components/Frog.vue';
 import Chat from './components/Chat.vue';
 import D3 from './components/D3.vue';
+import Concat from './components/Concat.vue';
 
 
 export default {
@@ -34,7 +36,8 @@ export default {
     Kids,
     Frog,
     Chat,
-    D3
+    D3,
+    Concat
   }
 }
 </script>

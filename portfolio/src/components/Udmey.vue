@@ -66,7 +66,7 @@ export default {
         height: 95vh;
         background-color:  rgb(246, 239, 243);
         -webkit-transition: all 0.5s ease;
-        padding-top: 68px;
+        padding-top: 85px;
         background-image: url("../assets/flowers4.png");
         background-size: contain;
         background-repeat: no-repeat;

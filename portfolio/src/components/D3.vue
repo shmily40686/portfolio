@@ -28,6 +28,9 @@
         <a href="https://shmily40686.github.io/d3-tech-companies">Check the Code</a>
       </div>
     </div>
+    <a href="#concat" id="down" >
+        <font-awesome-icon icon="chevron-down" />
+    </a>
   </div>
 </template>
 
@@ -47,7 +50,7 @@ export default {
         width: 100vw;
         height: 95vh;
         -webkit-transition: all 0.5s ease;
-        padding-top: 68px;
+        padding-top: 85px;
         background-size: cover;
         background-repeat: no-repeat;
         box-shadow: 0 0 100px 100px white inset;
