@@ -38,7 +38,6 @@ export default {
                 })
             },
             showUdmey: function () {
-                console.log("U")
                 const p = document.querySelector(".u-picture");
                 const t = document.querySelector(".u-text");
                 p.style.transform= "translateX(0%) scale(1)";
