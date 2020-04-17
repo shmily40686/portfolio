@@ -85,7 +85,7 @@ export default {
     align-items: center;
     padding: 30px 100px;
     background: rgba(255, 255, 255, 0.5);
-    margin-top: 5%;
+    margin-top: 2%;
     padding: 100px;
   }
 

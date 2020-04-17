@@ -144,7 +144,7 @@ export default {
              dt.style.opacity = 1;
            }
 
-           if(window.pageYOffset >= window.innerHeight * 6 + 400) {
+           if(window.pageYOffset >= window.innerHeight * 6 + 300) {
                  this.fadeInContact()
            }
          },

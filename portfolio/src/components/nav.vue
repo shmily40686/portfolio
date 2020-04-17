@@ -6,12 +6,13 @@
         Project
         <div class="projects" v-show="active" >
             <a href="#udmey" v-on:click="showUdmey">udmey-clone</a>
-            <a href="#kids">KidsCart</a>
-            <a href="#frog">Frog Jumper</a>
-            <a href="#chat">Fun Chat</a>
-            <a href="#d3">D3</a>
+            <a href="#kids" v-on:click="showKids">KidsCart</a>
+            <a href="#frog" v-on:click="showFrog">Frog Jumper</a>
+            <a href="#chat" v-on:click="showChat">Fun Chat</a>
+            <a href="#d3" v-on:click="showD3">D3</a>
         </div>
     </a>
+    <a class="nav-a" href="#concat" v-on:click="showMe">Contact Me</a>
   </div>
 </template>
 
@@ -37,10 +38,59 @@ export default {
                 })
             },
             showUdmey: function () {
+                console.log("U")
                 const p = document.querySelector(".u-picture");
                 const t = document.querySelector(".u-text");
                 p.style.transform= "translateX(0%) scale(1)";
                 t.style.transform = "translateX(0%) scale(1)";
+                p.style.opacity = 1;
+                t.style.opacity = 1;
+            },
+            showKids: function() {
+                const kp = document.querySelector(".k-picture");
+                const kt = document.querySelector(".k-text");
+                    kp.style.transform = "translateX(0%) scale(1)";
+                    kt.style.transform = "translateX(0%) scale(1)";
+                    kp.style.opacity = 1;
+                    kt.style.opacity = 1;
+            },
+            showFrog: function() {
+                const fp = document.querySelector(".f-picture");
+                const ft = document.querySelector(".f-text");
+                    fp.style.transform = "translateX(0%) scale(1)";
+                    ft.style.transform = "translateX(0%) scale(1)";
+                    fp.style.opacity = 1;
+                    ft.style.opacity = 1;
+            },
+            showChat: function() {
+                const cp = document.querySelector(".c-picture");
+                const ct = document.querySelector(".c-text");
+                    cp.style.transform = "translateX(0%) scale(1)";
+                    ct.style.transform = "translateX(0%) scale(1)";
+                    cp.style.opacity = 1;
+                    ct.style.opacity = 1;
+            },
+            showD3: function() {
+                const dp = document.querySelector(".d-picture");
+                const dt = document.querySelector(".d-text");
+                    dp.style.transform = "translateX(0%) scale(1)";
+                    dt.style.transform = "translateX(0%) scale(1)";
+                    dp.style.opacity = 1;
+                    dt.style.opacity = 1;
+            },
+            showMe: function () {
+                const title = document.querySelector(".c-white h1");
+                setTimeout(() => {
+                    title.style.transform = "translateX(0%) scale(1)";
+                    title.style.opacity = 1;
+                }, 0)
+                const lines = document.querySelectorAll(".line");
+                setTimeout(() => {
+                    lines.forEach((each) => {
+                        each.style.transform = "scale(1)";
+                        each.style.opacity = 1;
+                    })
+                }, 500)
             }
         }
 }

@@ -37,7 +37,7 @@
 <script>
 export default {
   name: 'D3',
-  method: {
+  methods: {
     goDown: function() {
       const title = document.querySelector(".c-white h1");
       setTimeout(() => {
