@@ -16,6 +16,12 @@
                 <h3>Email:</h3><a href="mailto:shmily40686@gmail.com">shmily40686@gmail.com</a>
                 <a id="click" href="mailto:shmily40686@gmail.com">(CLICK TO EMAIL ME!)</a>
             </div>
+            <div class="d-box">
+              <a id="download" href="../assets/Xiaowen Ling resume.pdf" download>
+                <font-awesome-icon icon="file-pdf"  id="icon"/>
+                 Download Xiaowen Ling's Resume
+              </a>
+            </div>
         </div>
     </div>
   </div>
@@ -106,6 +112,30 @@ export default {
    #click:hover {
      transform: scale(1.1);
      color: rgb(185, 51, 74);
+   }
+
+   #download{
+
+     font-size: 15px;
+     color:#2c3e50;
+     text-decoration: none;
+      -webkit-transition: all 0.5s ease;
+   }
+
+   #download:hover {
+     transform: scale(1.3);
+      color: rgb(185, 51, 74);
+   }
+
+   .d-box {
+     padding-top: 10px;
+     margin:0 auto;
+   }
+
+
+   #icon {
+     font-size:20px;
+     margin-right:10px;
    }
 
 </style>
