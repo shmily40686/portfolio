@@ -28,7 +28,7 @@
         <a href="https://shmily40686.github.io/d3-tech-companies">Check the Code</a>
       </div>
     </div>
-    <a href="#concat" id="down" >
+    <a href="#concat" id="down"  v-on:click="goDown">
         <font-awesome-icon icon="chevron-down" />
     </a>
   </div>
@@ -36,7 +36,23 @@
 
 <script>
 export default {
-  name: 'D3'
+  name: 'D3',
+  method: {
+    goDown: function() {
+      const title = document.querySelector(".c-white h1");
+      setTimeout(() => {
+        title.style.transform = "translateX(0%) scale(1)";
+        title.style.opacity = 1;
+      }, 0)
+      const lines = document.querySelectorAll(".line");
+      setTimeout(() => {
+        lines.forEach((each) => {
+          each.style.transform = "scale(1)";
+          each.style.opacity = 1;
+        })
+      }, 500)
+    }
+  }
 }
 </script>
 

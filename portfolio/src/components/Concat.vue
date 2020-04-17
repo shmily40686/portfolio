@@ -14,7 +14,7 @@
             </div>
             <div class="line">
                 <h3>Email:</h3><a href="mailto:shmily40686@gmail.com">shmily40686@gmail.com</a>
-                <h4>(CLICK TO EMAIL ME!)</h4>
+                <a id="click" href="mailto:shmily40686@gmail.com">(CLICK TO EMAIL ME!)</a>
             </div>
         </div>
     </div>
@@ -47,7 +47,9 @@ export default {
        display: flex;
        justify-content: center;
        align-items: center;
-
+       transform: scale(0);
+       -webkit-transition: all 0.8s ease;
+       opacity: 0;
    }
    
    .inside {
@@ -58,7 +60,11 @@ export default {
 
    h1 {
        margin-bottom: 30px;
+       transform: translateX(-100%) scale(0.5);
+       opacity: 0;
+       -webkit-transition: all 0.9s ease;
    }
+
   #down {
     font-size: 60px;
     opacity: 0.7;
@@ -86,6 +92,20 @@ export default {
   .c-white a {
     margin-left: 10px;
     color: #a0915a;
+    font-weight: 600;
   }
+
+  #click {
+    color:rgb(20, 19, 19);
+    margin-left: 10px;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+
+  }
+
+   #click:hover {
+     transform: scale(1.1);
+     color: rgb(185, 51, 74);
+   }
 
 </style>

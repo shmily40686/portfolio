@@ -78,6 +78,20 @@ export default {
             if (callNow) func.apply(context, args);
           }
         },
+        fadeInContact: function() {
+          const title = document.querySelector(".c-white h1");
+          setTimeout(() => {
+            title.style.transform = "translateX(0%) scale(1)";
+            title.style.opacity = 1;
+          },0)
+          const lines= document.querySelectorAll(".line");
+          setTimeout(() => {
+            lines.forEach((each) => {
+              each.style.transform = "scale(1)";
+              each.style.opacity = 1;
+            })
+          },500)
+        },
          checkScroll: function() {
             console.log("window.pageYOffset", window.pageYOffset)
             const sliderImages = document.querySelectorAll('.skill-img');
@@ -128,6 +142,10 @@ export default {
              dt.style.transform = "translateX(0%) scale(1)";
              dp.style.opacity = 1;
              dt.style.opacity = 1;
+           }
+
+           if(window.pageYOffset >= window.innerHeight * 6 + 400) {
+                 this.fadeInContact()
            }
          },
          frontendShow: function() {
