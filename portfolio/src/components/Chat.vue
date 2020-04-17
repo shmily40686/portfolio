@@ -33,7 +33,7 @@
         <a href="https://github.com/shmily40686/FunChat">Check the Code</a>
       </div>
     </div>
-    <a href="#d3" id="down">
+    <a href="#d3" id="down" v-on:click="goDown">
       <font-awesome-icon icon="chevron-down" />
     </a>
   </div>
@@ -41,7 +41,17 @@
 
 <script>
 export default {
-  name: 'Chat'
+  name: 'Chat',
+  methods: {
+        goDown: function () {
+          const dp = document.querySelector(".d-picture");
+          const dt = document.querySelector(".d-text");
+          dp.style.transform = "translateX(0%) scale(1)";
+          dt.style.transform = "translateX(0%) scale(1)";
+          dp.style.opacity = 1;
+          dt.style.opacity = 1;
+        }
+  }
 }
 </script>
 
@@ -55,7 +65,7 @@ export default {
         width: 100vw;
         height: 95vh;
         -webkit-transition: all 0.5s ease;
-        padding-top: 68px;
+        padding-top: 85px;
         background-size: cover;
         background-repeat: no-repeat;
         box-shadow: 0 0 100px 100px white inset;
