@@ -13,8 +13,8 @@
                 <h3>LinkedIn:</h3><a href="https://www.linkedin.com/in/lingxiaowen">https://www.linkedin.com/in/lingxiaowen</a>
             </div>
             <div class="line">
-                <h3>Email:</h3><a href="mailto:shmily40686@gmail.com">shmily40686@gmail.com</a>
-                <a id="click" href="mailto:shmily40686@gmail.com">(CLICK TO EMAIL ME!)</a>
+                <h3>Email:</h3><a target="_blank" href="mailto:shmily40686@gmail.com">shmily40686@gmail.com</a>
+                <a target="_blank" id="click" href="mailto:shmily40686@gmail.com">(CLICK TO EMAIL ME!)</a>
             </div>
             <div class="d-box">
               <a id="download" href="../assets/Xiaowen Ling resume.pdf" download>
