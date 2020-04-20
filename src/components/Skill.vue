@@ -275,4 +275,21 @@ export default {
   color: #a0915a;
 }
 
+@media only screen and (max-width: 537px) {
+   .skill {
+     padding-top: 37px;
+   }
+   .head-skill {
+        font-size: 10px;
+        width: 100vw;
+   }
+
+   /* .skill-img.active {
+     transform: translateX(0%) scale(2);
+   } */
+   .text-form {
+     font-size: 14px;
+   }
+}
+
 </style>
