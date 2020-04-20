@@ -102,10 +102,10 @@ export default {
        display: flex;
        justify-content: center;
        align-items: center;
-       width: 100%;
+       width: 100vw;
        height: 10vh;
        background-color: white;
-       z-index:10;
+       z-index: 10;
    }
 
    .nav-a {
@@ -153,4 +153,14 @@ export default {
      opacity: 1;
      transform:translateX(0%) scale(1);
    }
+
+   @media only screen and (max-width: 537px) {
+        .nav {
+            padding: 10px;
+        }
+        .nav-a {
+             font-size: 15px;
+        }
+    }
+    
 </style>

@@ -44,7 +44,7 @@ export default {
         setTimeout(() => {
           const text = document.getElementById("text")
           const img = document.getElementById("self-img")
-          img.style.transform = "scale(1)";
+          img.style.transform = "scale(0.7)";
           text.style.opacity = 1
           text.style.transform = "translate(0px, 0px)"
         },200)
@@ -103,7 +103,7 @@ export default {
 
   #text {
     flex:2;
-    min-width: 230px;
+    min-width: 205px;
     font-size: 18px;
     opacity: 0;
     -webkit-transition: all 2s ease;
@@ -117,4 +117,21 @@ export default {
     width: 200px;
     height: 300px;
   }
+
+
+@media only screen and (max-width: 537px) {
+    #text {
+      font-size: 11px;
+      width: 40vw;
+      padding: 20px;
+    }
+
+    #info {
+      margin-top: 40%;
+    }
+    
+    #head h1 {
+      font-size: 20px;
+    }
+}
 </style>
