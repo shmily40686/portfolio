@@ -43,7 +43,7 @@ export default {
         width: 100vw;
         height: 95vh;
         -webkit-transition: all 0.5s ease;
-        padding-top: 68px;
+        padding-top: 78px;
         background-size: cover;
         background-repeat: no-repeat;
         box-shadow: 0 0 100px 100px white inset;
@@ -136,6 +136,16 @@ export default {
    #icon {
      font-size:20px;
      margin-right:10px;
+   }
+
+   @media only screen and (max-width: 537px) { 
+     .c-white {
+          padding: 50px 20px 100px 20px;
+     }
+
+     .inside {
+       transform: scale(0.8);
+     }
    }
 
 </style>

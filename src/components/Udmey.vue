@@ -22,12 +22,12 @@
           <h5>Rails and React complement each other in this app that replicates key features of Udemy
           </h5>
           <ul>
-            <li>Utilized object IDs as keys in global redux store to provide constant time lookup of items within application
+            <li class="list">Utilized object IDs as keys in global redux store to provide constant time lookup of items within application
               state
             </li>
-            <li>Incorporated BCrypt with RoR backend to salt and hash passwords to prevent rainbow table attacks</li>
-            <li>Implemented original custom CSS animations for sliding window carousel to enhance UX across application</li>
-            <li>Optimized API queries to improve speed of search functionality by filtering content metadata by category and
+            <li class="list">Incorporated BCrypt with RoR backend to salt and hash passwords to prevent rainbow table attacks</li>
+            <li class="list">Implemented original custom CSS animations for sliding window carousel to enhance UX across application</li>
+            <li class="list">Optimized API queries to improve speed of search functionality by filtering content metadata by category and
               title
             </li>
           </ul>
@@ -112,6 +112,7 @@ export default {
 
    .u-text {
     display: flex;
+    overflow-y: auto;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.6);
     height: 90%;
@@ -139,10 +140,36 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
    }
 
    .u-text-header h2 {
       color: #a0915a;
       margin-right: 10px;
    }
+
+   @media only screen and (max-width: 537px) { 
+     .udmey {
+       padding-top: 75px;
+     }
+     /* .u-picture {
+           transform: translateX(0%) scale(0.9);
+     }
+     .u-text {
+           transform: translateX(0%) scale(0.9);
+     } */
+     .u-text-header {
+       padding-top:80px;
+     }
+
+     .u-text-header h4 {
+       font-size: 8px;
+     }
+
+     .list {
+        font-size: 10px;
+        margin-left: -30px;
+     }
+   }
+
 </style>

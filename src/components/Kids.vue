@@ -26,11 +26,11 @@
           </div>
           <h5>An Express backend and React + Redux frontend built this food ordering app for your kids</h5>
           <ul>
-            <li>Designed non-relational database schemas for MongoDB to improve reads based on metadata about meal ingredients
+            <li class="list">Designed non-relational database schemas for MongoDB to improve reads based on metadata about meal ingredients
             </li>
-            <li>Instrumented meal selector using images layered on top of custom SVG graphic to visually display ingredients
+            <li class="list">Instrumented meal selector using images layered on top of custom SVG graphic to visually display ingredients
             </li>
-            <li>Implemented responsive search results page by utilizing CSS transitions and media queries to enhance user
+            <li class="list">Implemented responsive search results page by utilizing CSS transitions and media queries to enhance user
               experience
             </li>
           </ul>
@@ -146,6 +146,25 @@ export default {
    .k-text-header h2 {
       color: #a0915a;
       margin-right: 10px;
+   }
+
+   @media only screen and (max-width: 537px) { 
+     .kids {
+       padding-top: 75px;
+     }
+
+     .k-text-header {
+       padding-top:80px;
+     }
+
+     .k-text-header h4 {
+       font-size: 8px;
+     }
+
+     .list {
+        font-size: 10px;
+        margin-left: -30px;
+     }
    }
 
 </style>

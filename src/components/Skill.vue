@@ -277,18 +277,23 @@ export default {
 
 @media only screen and (max-width: 537px) {
    .skill {
-     padding-top: 37px;
+     padding-top: 77px;
    }
    .head-skill {
         font-size: 10px;
         width: 100vw;
    }
 
-   /* .skill-img.active {
+   .skill-img.active {
      transform: translateX(0%) scale(2);
-   } */
+   }
+
    .text-form {
      font-size: 14px;
+   }
+
+   #logo {
+       margin-top: 40px;
    }
 }
 

@@ -18,13 +18,13 @@
         <h5>Runner game where a frog jumps over obstacles and collects tokens to increase score.
         </h5>
         <ul>
-          <li>Created infinitely scrolling game by repeatedly calling HTML5 Canvas draw method using requestAnimationFrame
+          <li class="list">Created infinitely scrolling game by repeatedly calling HTML5 Canvas draw method using requestAnimationFrame
           </li>
-          <li>Designed algorithm using coordinates and the distance formula to detect collisions between player and obstacles
+          <li class="list">Designed algorithm using coordinates and the distance formula to detect collisions between player and obstacles
           </li>
-          <li>Implemented 3D illusion layering multiple canvas elements for background, objects, and foreground
+          <li class="list">Implemented 3D illusion layering multiple canvas elements for background, objects, and foreground
           </li>
-          <li>Utilized webpack and OOP to design classes and separate components into logical concerns
+          <li class="list">Utilized webpack and OOP to design classes and separate components into logical concerns
           </li>
         </ul>
         <a href="https://shmily40686.github.io/frog-jumper ">Check the Project</a>
@@ -140,5 +140,24 @@ export default {
    .f-text-header h2 {
       color: #a0915a;
       margin-right: 10px;
+   }
+
+   @media only screen and (max-width: 537px) { 
+     .frog {
+       padding-top: 75px;
+     }
+
+     .f-text-header {
+       padding-top:80px;
+     }
+
+     .f-text-header h4 {
+       font-size: 8px;
+     }
+
+     .list {
+        font-size: 10px;
+        margin-left: -30px;
+     }
    }
 </style>

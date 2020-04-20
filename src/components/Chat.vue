@@ -23,11 +23,11 @@
         <h5>Chat application focusing on cross-language communication that translates messages you send automatically
         </h5>
         <ul>
-          <li>Utilized socket.io library to emit events from an express backend and listened on the frontend using the .on
+          <li class="list">Utilized socket.io library to emit events from an express backend and listened on the frontend using the .on
             method
           </li>
-          <li>Used Validator to ensure normalization of models with metadata to specify language preferences</li>
-          <li>Incorporated translation API to automatically translate messages received to current native language</li>
+          <li class="list">Used Validator to ensure normalization of models with metadata to specify language preferences</li>
+          <li class="list">Incorporated translation API to automatically translate messages received to current native language</li>
         </ul>
         <a href="https://fun-chats.herokuapp.com">Check the Project</a>
         <a href="https://github.com/shmily40686/FunChat">Check the Code</a>
@@ -142,5 +142,25 @@ export default {
    .c-text-header h2 {
       color: #a0915a;
       margin-right: 10px;
+   }
+
+
+   @media only screen and (max-width: 537px) { 
+     .chat {
+       padding-top: 75px;
+     }
+
+     .c-text-header {
+       padding-top:80px;
+     }
+
+     .c-text-header h4 {
+       font-size: 8px;
+     }
+
+     .list {
+        font-size: 10px;
+        margin-left: -30px;
+     }
    }
 </style>

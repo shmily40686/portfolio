@@ -20,9 +20,9 @@
         </div>
         <h5>D3 powers these data visualizations to captivate the eye while describing a story of information</h5>
         <ul>
-          <li>Reused canvases between multiple visualizations to improve interactive aspect of gallery
+          <li class="list">Reused canvases between multiple visualizations to improve interactive aspect of gallery
           </li>
-          <li>Created with vanilla JavaScript and HTML5 without needing to leverage frontend frameworks to control views</li>
+          <li class="list">Created with vanilla JavaScript and HTML5 without needing to leverage frontend frameworks to control views</li>
         </ul>
         <a href="https://github.com/shmily40686/d3-tech-companies">Check the Project</a>
         <a href="https://shmily40686.github.io/d3-tech-companies">Check the Code</a>
@@ -142,5 +142,25 @@ export default {
    .d-text-header h2 {
       color: #a0915a;
       margin-right: 10px;
+   }
+
+
+   @media only screen and (max-width: 537px) { 
+     .d3 {
+       padding-top: 75px;
+     }
+
+     .d-text-header {
+       padding-top:60px;
+     }
+
+     .d-text-header h4 {
+       font-size: 8px;
+     }
+
+     .list {
+        font-size: 10px;
+        margin-left: -30px;
+     }
    }
 </style>

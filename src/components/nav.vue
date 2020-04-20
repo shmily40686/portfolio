@@ -161,6 +161,10 @@ export default {
         .nav-a {
              font-size: 15px;
         }
+
+        .projects {
+            top: 8.5vh;
+        }
     }
     
 </style>
