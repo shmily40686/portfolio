@@ -17,7 +17,7 @@
                 <a target="_blank" id="click" href="mailto:shmily40686@gmail.com">(CLICK TO EMAIL ME!)</a>
             </div>
             <div class="d-box">
-              <a id="download" href="../assets/Xiaowen Ling resume.pdf" download>
+              <a id="download" href="../assets/Xiaowen Ling.pdf" download>
                 <font-awesome-icon icon="file-pdf"  id="icon"/>
                  Download Xiaowen Ling's Resume
               </a>
