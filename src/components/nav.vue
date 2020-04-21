@@ -2,7 +2,7 @@
   <div class="nav">
     <a class="nav-a" href="#self">Introduction</a>
     <a class="nav-a" href="#skill"  v-on:click="showSkill">Skill</a>
-    <a class="nav-a p"  v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
+    <a class="nav-a p"  href="#udmey"   v-on:click="showUdmey" v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
         Project
         <div class="projects" v-show="active" >
             <a href="#udmey" v-on:click="showUdmey">udmey-clone</a>
@@ -156,10 +156,11 @@ export default {
 
    @media only screen and (max-width: 537px) {
         .nav {
-            padding: 10px;
+            /* padding: 5px; */
+            padding-left: -10px;
         }
         .nav-a {
-             font-size: 15px;
+             font-size: 10px;
         }
 
         .projects {

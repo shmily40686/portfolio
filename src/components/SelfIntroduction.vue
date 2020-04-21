@@ -128,6 +128,7 @@ export default {
 
     #info {
       margin-top: 40%;
+      transform: scale(0.8);
     }
     
     #head h1 {
