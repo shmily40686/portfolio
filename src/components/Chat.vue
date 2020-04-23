@@ -150,17 +150,36 @@ export default {
        padding-top: 75px;
      }
 
+    .c-picture {
+          height: 60%;
+     }
+     .c-text {
+          height: 60%;
+     }
      .c-text-header {
-       padding-top:80px;
+       padding-top:220px;
      }
 
-     .c-text-header h4 {
-       font-size: 8px;
-     }
-
+    #down {
+      font-size: 20px;
+    }
      .list {
         font-size: 10px;
         margin-left: -30px;
      }
+
+     .c-picture {
+          height: 60%;
+     }
+     .c-text {
+          height: 60%;
+     }
+     .c-text-header {
+       padding-top:220px;
+     }
+
+    #down {
+      font-size: 20px;
+    }
    }
 </style>

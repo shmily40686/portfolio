@@ -88,7 +88,7 @@ export default {
     align-items: center;
     padding: 30px 100px;
     background: rgba(255, 255, 255, 0.5);
-    margin-top: 15%;
+    margin-top: 10%;
   }
 
   #head {
@@ -129,9 +129,14 @@ export default {
     #info {
       margin-top: 40%;
       transform: scale(0.8);
+      margin-bottom: -25px;
     }
     
     #head h1 {
+      font-size: 20px;
+    }
+
+    #down {
       font-size: 20px;
     }
 }

@@ -149,13 +149,24 @@ export default {
    }
 
    @media only screen and (max-width: 537px) { 
+
+     .k-picture {
+          height: 60%;
+     }
+     .k-text {
+          height: 60%;
+     }
+     .k-text-header {
+       padding-top:220px;
+     }
+
      .kids {
        padding-top: 75px;
      }
 
-     .k-text-header {
-       padding-top:80px;
-     }
+    #down {
+      font-size: 20px;
+    }
 
      .k-text-header h4 {
        font-size: 8px;

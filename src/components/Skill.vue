@@ -295,6 +295,10 @@ export default {
    #logo {
        margin-top: 40px;
    }
+
+   #down {
+      font-size: 20px;
+    }
 }
 
 </style>

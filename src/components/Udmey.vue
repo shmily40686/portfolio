@@ -152,14 +152,14 @@ export default {
      .udmey {
        padding-top: 75px;
      }
-     /* .u-picture {
-           transform: translateX(0%) scale(0.9);
+     .u-picture {
+          height: 60%;
      }
      .u-text {
-           transform: translateX(0%) scale(0.9);
-     } */
+          height: 60%;
+     }
      .u-text-header {
-       padding-top:80px;
+       padding-top:220px;
      }
 
      .u-text-header h4 {
@@ -170,6 +170,10 @@ export default {
         font-size: 10px;
         margin-left: -30px;
      }
+
+     #down {
+      font-size: 20px;
+    }
    }
 
 </style>

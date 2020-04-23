@@ -147,9 +147,19 @@ export default {
        padding-top: 75px;
      }
 
-     .f-text-header {
-       padding-top:80px;
+     .f-picture {
+          height: 60%;
      }
+     .f-text {
+          height: 60%;
+     }
+     .f-text-header {
+       padding-top:220px;
+     }
+
+    #down {
+      font-size: 20px;
+    }
 
      .f-text-header h4 {
        font-size: 8px;

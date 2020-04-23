@@ -133,11 +133,19 @@ export default {
      color: #e4c44e;
    }
 
-   .d-text-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
+   .d-picture {
+          height: 60%;
+     }
+     .d-text {
+          height: 60%;
+     }
+     .d-text-header {
+       padding-top:220px;
+     }
+
+    #down {
+      font-size: 20px;
+    }
 
    .d-text-header h2 {
       color: #a0915a;
