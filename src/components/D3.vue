@@ -139,12 +139,6 @@ export default {
      color: #e4c44e;
    }
 
-  
-
-    #down {
-      font-size: 20px;
-    }
-
    .d-text-header h2 {
       color: #a0915a;
       margin-right: 10px;
@@ -159,13 +153,16 @@ export default {
       .d-picture {
           height: 60%;
      }
-    .d-text {
-          height: 60%;
-    }
-    .d-text-header {
-       padding-top:220px;
-    }
+      .d-text {
+            height: 60%;
+      }
+      .d-text-header {
+        padding-top:220px;
+      }
 
+      #down {
+      font-size: 20px;
+     }
 
      .d-text-header h4 {
        font-size: 8px;
