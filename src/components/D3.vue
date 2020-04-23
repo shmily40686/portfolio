@@ -124,6 +124,12 @@ export default {
     opacity: 0;
    }
 
+   .d-text-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
    .d-text a {
      color: #a0915a;
      margin:10px
@@ -133,15 +139,7 @@ export default {
      color: #e4c44e;
    }
 
-   .d-picture {
-          height: 60%;
-     }
-     .d-text {
-          height: 60%;
-     }
-     .d-text-header {
-       padding-top:220px;
-     }
+  
 
     #down {
       font-size: 20px;
@@ -158,9 +156,16 @@ export default {
        padding-top: 75px;
      }
 
-     .d-text-header {
-       padding-top:60px;
+      .d-picture {
+          height: 60%;
      }
+    .d-text {
+          height: 60%;
+    }
+    .d-text-header {
+       padding-top:220px;
+    }
+
 
      .d-text-header h4 {
        font-size: 8px;
