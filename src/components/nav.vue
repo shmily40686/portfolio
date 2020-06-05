@@ -8,6 +8,7 @@
             <a href="#udmey" v-on:click="showUdmey">udmey-clone</a>
             <a href="#kids" v-on:click="showKids">KidsCart</a>
             <a href="#frog" v-on:click="showFrog">Frog Jumper</a>
+            <a href="#musicBox" v-on:click="showBox">Music Box</a>
             <a href="#chat" v-on:click="showChat">Fun Chat</a>
             <a href="#d3" v-on:click="showD3">D3</a>
         </div>
@@ -60,6 +61,14 @@ export default {
                     ft.style.transform = "translateX(0%) scale(1)";
                     fp.style.opacity = 1;
                     ft.style.opacity = 1;
+            },
+            showBox: function () {
+                const bp = document.querySelector(".b-picture");
+                const bt = document.querySelector(".b-text");
+                bp.style.transform = "translateX(0%) scale(1)";
+                bt.style.transform = "translateX(0%) scale(1)";
+                bp.style.opacity = 1;
+                bt.style.opacity = 1;
             },
             showChat: function() {
                 const cp = document.querySelector(".c-picture");
@@ -134,7 +143,7 @@ export default {
        padding: 15px 30px 0px;
        border-bottom-left-radius: 5px;
        border-bottom-right-radius: 5px;
-       opacity: 95%;
+       opacity: .95;
    }
 
    .projects a {

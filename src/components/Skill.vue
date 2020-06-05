@@ -93,7 +93,6 @@ export default {
           },500)
         },
          checkScroll: function() {
-            console.log("window.pageYOffset", window.pageYOffset)
             const sliderImages = document.querySelectorAll('.skill-img');
             sliderImages.forEach(sliderImage => {
               if(window.pageYOffset >= window.innerHeight / 2 - 100) {
@@ -126,9 +125,19 @@ export default {
              ft.style.opacity = 1;
             }
 
+
+            const bp = document.querySelector(".b-picture");
+           const bt = document.querySelector(".b-text");
+           if (window.pageYOffset >= window.innerHeight * 4 + 300) {
+             bp.style.transform = "translateX(0%) scale(1)";
+             bt.style.transform = "translateX(0%) scale(1)";
+             bp.style.opacity = 1;
+             bt.style.opacity = 1;
+           }
+
             const cp = document.querySelector(".c-picture");
             const ct = document.querySelector(".c-text");
-           if (window.pageYOffset >= window.innerHeight * 4 + 300) {
+           if (window.pageYOffset >= window.innerHeight * 5 + 300) {
              cp.style.transform = "translateX(0%) scale(1)";
              ct.style.transform = "translateX(0%) scale(1)";
              cp.style.opacity = 1;
@@ -137,14 +146,14 @@ export default {
 
            const dp = document.querySelector(".d-picture");
            const dt = document.querySelector(".d-text");
-           if (window.pageYOffset >= window.innerHeight * 5 + 300) {
+           if (window.pageYOffset >= window.innerHeight * 6 + 300) {
              dp.style.transform = "translateX(0%) scale(1)";
              dt.style.transform = "translateX(0%) scale(1)";
              dp.style.opacity = 1;
              dt.style.opacity = 1;
            }
 
-           if(window.pageYOffset >= window.innerHeight * 6 + 300) {
+           if(window.pageYOffset >= window.innerHeight * 7 + 300) {
                  this.fadeInContact()
            }
          },

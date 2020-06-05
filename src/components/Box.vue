@@ -29,8 +29,8 @@
           <li class="list">Utilized webpack and OOP to design classes and separate components into logical concerns
           </li>
         </ul>
-        <a href="https://shmily40686.github.io/frog-jumper ">Check the Project</a>
-        <a href="https://github.com/shmily40686/frog-jumper">Check the Code</a>
+        <a href="https://shmily40686.github.io/musicBox">Check the Project</a>
+        <a href="https://github.com/shmily40686/musicBox">Check the Code</a>
       </div>
     </div>
       <a href="#chat" id="down" v-on:click="goDown">
