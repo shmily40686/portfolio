@@ -17,16 +17,14 @@
           <h2>Music Box</h2>
           <h4> (JavaScript, HTML5, CSS)</h4>
         </div>
-        <h5>Runner game where a box jumps over obstacles and collects tokens to increase score.
+        <h5>Interactive audio-based games
         </h5>
         <ul>
-          <li class="list">Created infinitely scrolling game by repeatedly calling HTML5 Canvas draw method using requestAnimationFrame
+          <li class="list">optimized performance of step sequencer by storing audio nodes in custom data structure
           </li>
-          <li class="list">Designed algorithm using coordinates and the distance formula to detect collisions between player and obstacles
+          <li class="list">instrumented handling of key presses to imitate realistic piano
           </li>
-          <li class="list">Implemented 3D illusion layering multiple canvas elements for background, objects, and foreground
-          </li>
-          <li class="list">Utilized webpack and OOP to design classes and separate components into logical concerns
+          <li class="list">Created slider interface to control the tempo of the step sequencer
           </li>
         </ul>
         <a href="https://shmily40686.github.io/musicBox">Check the Project</a>
