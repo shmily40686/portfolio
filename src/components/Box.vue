@@ -1,21 +1,23 @@
 <template>
-  <div class="frog" id="frog">
-    <a href="#kids" id="down">
+  <div class="musicBox" id="musicBox">
+    <a href="#frog" id="down">
       <font-awesome-icon icon="chevron-up" />
     </a>
     <div class="big">
-      <div class="f-picture">
-        <img src="../assets/frog/1.png">
-        <img src="../assets/frog/2.png">
-        <img src="../assets/frog/3.png">
-        <img src="../assets/frog/4.png">
+      <div class="b-picture">
+        <img src="../assets/box/1.png">
+        <img src="../assets/box/2.png">
+        <img src="../assets/box/3.png">
+        <img src="../assets/box/4.png">
+        <img src="../assets/box/5.png">
+        <img src="../assets/box/6.png">
       </div>
-      <div class="f-text">
-        <div class="f-text-header">
-          <h2>Frog Jumper</h2>
-          <h4> (JavaScript, HTML5)</h4>
+      <div class="b-text">
+        <div class="b-text-header">
+          <h2>Music Box</h2>
+          <h4> (JavaScript, HTML5, CSS)</h4>
         </div>
-        <h5>Runner game where a frog jumps over obstacles and collects tokens to increase score.
+        <h5>Runner game where a box jumps over obstacles and collects tokens to increase score.
         </h5>
         <ul>
           <li class="list">Created infinitely scrolling game by repeatedly calling HTML5 Canvas draw method using requestAnimationFrame
@@ -31,23 +33,23 @@
         <a href="https://github.com/shmily40686/frog-jumper">Check the Code</a>
       </div>
     </div>
-    <a href="#musicBox" id="down" v-on:click="goDown">
-      <font-awesome-icon icon="chevron-down" />
-    </a>
+      <a href="#chat" id="down" v-on:click="goDown">
+        <font-awesome-icon icon="chevron-down" />
+      </a>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Frog',
+  name: 'Box',
   methods: {
         goDown: function () {
-          const bp = document.querySelector(".b-picture");
-          const bt = document.querySelector(".b-text");
-          bp.style.transform = "translateX(0%) scale(1)";
-          bt.style.transform = "translateX(0%) scale(1)";
-          bp.style.opacity = 1;
-          bt.style.opacity = 1;
+          const cp = document.querySelector(".c-picture");
+          const ct = document.querySelector(".c-text");
+          cp.style.transform = "translateX(0%) scale(1)";
+          ct.style.transform = "translateX(0%) scale(1)";
+          cp.style.opacity = 1;
+          ct.style.opacity = 1;
         }
   }
 }
@@ -55,8 +57,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    .frog {
-        background-image: url("../assets/flowers2.png");
+    .musicBox {
+        background-image: url("../assets/leaf2.png");
         background-color:  rgb(246, 239, 243);
         display: flex;
         flex-direction: column;
@@ -89,7 +91,7 @@ export default {
     color: #dbc17b;
   }
 
-  .f-picture {
+  .b-picture {
       background: rgba(255, 255, 255, 0.8);
       height: 90%;
       width: 40%;
@@ -101,12 +103,12 @@ export default {
       transform:translateX(-100%) scale(0.95);
       opacity: 0;
    }
-   .f-picture img {
+   .b-picture img {
      width: 90%;
      padding: 20px;
    }
 
-   .f-text {
+   .b-text {
     display: flex;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.8);
@@ -122,38 +124,38 @@ export default {
     opacity: 0;
    }
 
-   .f-text a {
+   .b-text a {
      color: #a0915a;
      margin:10px
    }
 
-   .f-text a:hover {
+   .b-text a:hover {
      color: #e4c44e;
    }
 
-   .f-text-header{
+   .b-text-header{
     display: flex;
     justify-content: center;
     align-items: center;
    }
 
-   .f-text-header h2 {
+   .b-text-header h2 {
       color: #a0915a;
       margin-right: 10px;
    }
 
    @media only screen and (max-width: 537px) { 
-     .frog {
+     .musicBox {
        padding-top: 75px;
      }
 
-     .f-picture {
+     .b-picture {
           height: 60%;
      }
-     .f-text {
+     .b-text {
           height: 60%;
      }
-     .f-text-header {
+     .b-text-header {
        padding-top:220px;
      }
 
@@ -161,7 +163,7 @@ export default {
       font-size: 20px;
     }
 
-     .f-text-header h4 {
+     .b-text-header h4 {
        font-size: 8px;
      }
 

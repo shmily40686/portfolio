@@ -6,6 +6,7 @@
     <Udmey />
     <Kids />
     <Frog />
+    <Box />
     <Chat />
     <D3 />
     <Concat />
@@ -21,6 +22,7 @@ import Nav from './components/nav.vue';
 import Udmey from './components/Udmey.vue';
 import Kids from './components/Kids.vue';
 import Frog from './components/Frog.vue';
+import Box from './components/Box.vue';
 import Chat from './components/Chat.vue';
 import D3 from './components/D3.vue';
 import Concat from './components/Concat.vue';
@@ -35,6 +37,7 @@ export default {
     Udmey,
     Kids,
     Frog,
+    Box,
     Chat,
     D3,
     Concat

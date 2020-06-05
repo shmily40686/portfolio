@@ -1,6 +1,6 @@
 <template>
   <div class="chat" id="chat">
-      <a href="#frog" id="down">
+      <a href="#musicBox" id="down">
         <font-awesome-icon icon="chevron-up" />
       </a>
     <div class="big">
