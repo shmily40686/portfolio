@@ -24,8 +24,8 @@
           </li>
           <li class="list">Created with vanilla JavaScript and HTML5 without needing to leverage frontend frameworks to control views</li>
         </ul>
-        <a href="https://github.com/shmily40686/d3-tech-companies">Check the Project</a>
-        <a href="https://shmily40686.github.io/d3-tech-companies">Check the Code</a>
+        <a href="https://shmily40686.github.io/d3-tech-companies">Check the Project</a>
+        <a href="https://github.com/shmily40686/d3-tech-companies">Check the Code</a>
       </div>
     </div>
     <a href="#concat" id="down"  v-on:click="goDown">
